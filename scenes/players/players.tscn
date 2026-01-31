@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dudk0ituk5j8w" path="res://scenes/players/players.gd" id="1_u6k21"]
 [ext_resource type="PackedScene" uid="uid://kufr8ph0ur8h" path="res://scenes/players/monster_model.tscn" id="2_j7hel"]
+[ext_resource type="PackedScene" uid="uid://1italmrgaq0" path="res://scenes/mask/mask.tscn" id="3_qrkte"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qrkte"]
 radius = 1.0922852
@@ -16,3 +17,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41052246, 0)
 shape = SubResource("CapsuleShape3D_qrkte")
 
 [node name="MonsterModel" parent="." unique_id=709918709 instance=ExtResource("2_j7hel")]
+
+[node name="Mask" parent="." unique_id=1667784732 instance=ExtResource("3_qrkte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8933811, -2.6021168)

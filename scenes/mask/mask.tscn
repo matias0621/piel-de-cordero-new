@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1italmrgaq0"]
+
+[ext_resource type="Script" uid="uid://degh5omnrxve8" path="res://scenes/mask/mascara.gd" id="1_44u6u"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_npq30"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_44u6u"]
+
+[node name="Mask" type="CharacterBody3D" unique_id=1667784732]
+script = ExtResource("1_44u6u")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=55215513]
+mesh = SubResource("SphereMesh_npq30")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1958273340]
+shape = SubResource("SphereShape3D_44u6u")

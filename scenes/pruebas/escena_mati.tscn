@@ -26,4 +26,4 @@ shape = SubResource("HeightMapShape3D_po620")
 transform = Transform3D(-0.045415316, 0.8177265, -0.5738126, 0, 0.5744053, 0.8185711, 0.9989682, 0.037175663, -0.026086798, -42.334717, 20.479288, 4.5168915)
 
 [node name="Players" parent="." unique_id=796467928 instance=ExtResource("1_adpu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.114456, 1, -16.941368)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3698616, 5.7048264, -7.3420677)
