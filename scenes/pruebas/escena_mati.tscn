@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cife4ieoppieq"]
+
+[ext_resource type="PackedScene" uid="uid://eybnci8tomx0" path="res://scenes/players/players.tscn" id="1_adpu8"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_po620"]
+
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_po620"]
+
+[node name="EscenaMati" type="Node3D" unique_id=2045668540]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1763288041]
+transform = Transform3D(-0.99997425, 0, 0.007173151, 0, 1, 0, -0.007173151, 0, -0.99997425, 0.065, 4.004, -30)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2060051927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.680607)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=533365771]
+transform = Transform3D(50, 0, 0, 0, -2.1855694e-06, 50, 0, -50, -2.1855694e-06, 0, 0, 0)
+mesh = SubResource("QuadMesh_po620")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=994260320]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+shape = SubResource("HeightMapShape3D_po620")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1341149416]
+transform = Transform3D(-0.045415316, 0.8177265, -0.5738126, 0, 0.5744053, 0.8185711, 0.9989682, 0.037175663, -0.026086798, -42.334717, 20.479288, 4.5168915)
+
+[node name="Players" parent="." unique_id=796467928 instance=ExtResource("1_adpu8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.114456, 1, -16.941368)

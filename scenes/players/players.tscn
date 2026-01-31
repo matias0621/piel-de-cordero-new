@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://eybnci8tomx0"]
+
+[ext_resource type="Script" uid="uid://dudk0ituk5j8w" path="res://scenes/players/players.gd" id="1_u6k21"]
+[ext_resource type="PackedScene" uid="uid://kufr8ph0ur8h" path="res://scenes/players/monster_model.tscn" id="2_j7hel"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qrkte"]
+radius = 1.0922852
+height = 5.33374
+
+[node name="Players" type="CharacterBody3D" unique_id=796467928 node_paths=PackedStringArray("monster_animation")]
+script = ExtResource("1_u6k21")
+monster_animation = NodePath("MonsterModel")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=384090268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41052246, 0)
+shape = SubResource("CapsuleShape3D_qrkte")
+
+[node name="MonsterModel" parent="." unique_id=709918709 instance=ExtResource("2_j7hel")]
