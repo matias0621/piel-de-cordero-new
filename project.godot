@@ -28,6 +28,11 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray("res://addons/multiplayer_input/plugin.cfg")
 
+[global_group]
+
+Monster=""
+Human=""
+
 [input]
 
 player_one_right={

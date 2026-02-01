@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://b74sb013r7h3m"]
+
+[ext_resource type="PackedScene" uid="uid://dvd1mhyv3edpr" path="res://test/piel de cordero 1 (2).blend" id="1_0hihy"]
+
+[node name="piel de cordero 1 (2)" unique_id=982219810 instance=ExtResource("1_0hihy")]
+
+[node name="Empty" parent="." index="0" unique_id=147510847]
+visible = false
+
+[node name="Empty_001" parent="." index="1" unique_id=374688727]
+visible = false
+
+[node name="Plane" parent="." index="3" unique_id=1425724169]
+visible = false
+
+[node name="Empty_002" parent="." index="4" unique_id=1954161127]
+visible = false
+
+[node name="Empty_003" parent="." index="5" unique_id=1181680656]
+visible = false
+
+[node name="Cube_002" parent="." index="6" unique_id=497251998]
+visible = false
+
+[node name="Empty_004" parent="." index="7" unique_id=1740966738]
+visible = false
+
+[node name="Sphere" parent="." index="8" unique_id=832855114]
+visible = false
+
+[node name="Sphere_001" parent="." index="9" unique_id=687807448]
+visible = false
+
+[node name="Sphere_002" parent="." index="10" unique_id=1751693663]
+visible = false
+
+[node name="Sphere_003" parent="." index="11" unique_id=1790242634]
+visible = false
+
+[node name="Sphere_004" parent="." index="12" unique_id=1718217180]
+visible = false
+
+[node name="Sphere_005" parent="." index="13" unique_id=522121798]
+visible = false
+
+[node name="Sphere_006" parent="." index="14" unique_id=8892141]
+visible = false
+
+[node name="Sphere_007" parent="." index="15" unique_id=107078941]
+visible = false
+
+[node name="Sphere_008" parent="." index="16" unique_id=1853225188]
+visible = false
+
+[node name="Cube_004" parent="." index="17" unique_id=1038135296]
+visible = false
+
+[node name="Cube_005" parent="." index="18" unique_id=1867457784]
+visible = false
+
+[node name="Cube_006" parent="." index="19" unique_id=1027093912]
+visible = false
+
+[node name="metarig_001" parent="." index="20" unique_id=1754215056]
+visible = false
+
+[node name="Skeleton3D" parent="metarig_001" index="0" unique_id=1010291508]
+visible = false
+
+[node name="Cube_001" parent="metarig_001/Skeleton3D" index="0" unique_id=120491859]
+visible = false
+
+[node name="Cube_003" parent="metarig_001/Skeleton3D" index="1" unique_id=1259199510]
+visible = false
+
+[node name="metarig_002" parent="." index="21" unique_id=17534609]
+visible = false
+
+[node name="Skeleton3D" parent="metarig_002" index="0" unique_id=815262380]
+visible = false
+
+[node name="Sphere_009" parent="." index="22" unique_id=1275261570]
+visible = false
+
+[node name="Sphere_010" parent="." index="23" unique_id=1311892174]
+visible = false
+
+[node name="Sphere_011" parent="." index="24" unique_id=383730775]
+visible = false

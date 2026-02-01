@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("ui_accept"):
 		monster_animation.play_animation(_name_animations.shock)
 	
-	if MultiplayerInput.is_action_just_pressed(device_id,"shoot_mask") and not is_mask_thrown:
+	if MultiplayerInput.is_action_just_pressed(device_id,"shoot_mask") and not is_mask_thrown and is_in_group("Human"):
 		_throw_mask()
 	
 	if input_dir != Vector2.ZERO:
@@ -83,3 +83,13 @@ func _return_mask():
 	mask_node.set_collision_layer(1)
 	mask_node.set_collision_mask(1)
 	is_mask_thrown = false
+
+func set_as_human():
+	add_to_group("Human")
+	remove_from_group("Monster")
+	mask_node.show()
+
+func set_as_monster():
+	add_to_group("Monster")
+	remove_from_group("Human")
+	mask_node.hide()
