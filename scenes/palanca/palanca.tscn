@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cogdt8cloroq"]
+
+[ext_resource type="Script" uid="uid://dwnslg3ilpgpr" path="res://scenes/palanca/palanca.gd" id="1_7gnme"]
+[ext_resource type="PackedScene" uid="uid://d30ipf0eo8ynf" path="res://scenes/players/palanca_model.tscn" id="2_ciodu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7gnme"]
+radius = 3.0285115
+
+[node name="Palanca" type="MeshInstance3D" unique_id=123192877 groups=["palanca"]]
+script = ExtResource("1_7gnme")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1614782863]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=908480679]
+shape = SubResource("SphereShape3D_7gnme")
+
+[node name="piel de cordero 1 (8)" parent="." unique_id=883436535 instance=ExtResource("2_ciodu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.231735, -2.3066654, -4.5131035)
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

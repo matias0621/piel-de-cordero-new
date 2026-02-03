@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b0ffbr4532nap"]
+
+[ext_resource type="Script" uid="uid://buwo1b8kga33q" path="res://scenes/pruebas/container_player.gd" id="1_q3gbu"]
+[ext_resource type="PackedScene" uid="uid://eybnci8tomx0" path="res://scenes/players/players.tscn" id="2_1mbiq"]
+
+[node name="ContainerPlayer" type="Node3D" unique_id=2134741053]
+script = ExtResource("1_q3gbu")
+
+[node name="Players" parent="." unique_id=796467928 instance=ExtResource("2_1mbiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3698616, 5.7048264, -7.3420677)
+
+[node name="Players2" parent="." unique_id=546338573 instance=ExtResource("2_1mbiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5960245, -20.164665)
+device_id = 0
+
+[node name="Players3" parent="." unique_id=860512054 instance=ExtResource("2_1mbiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.966572, 6.6954875, 0)
+device_id = 1
+
+[node name="Players4" parent="." unique_id=151630665 instance=ExtResource("2_1mbiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.068829, 5.399602, 0)
+device_id = 2

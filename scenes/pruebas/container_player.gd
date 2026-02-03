@@ -7,7 +7,6 @@ func _ready() -> void:
 	list_players = get_children()
 	_select_human()
 
-
 func _select_human() -> void:
 	var n_ramdom = randi_range(0, list_players.size() - 1)
 	

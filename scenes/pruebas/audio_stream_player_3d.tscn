@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c8puwv26q0fw3"]
+
+[ext_resource type="AudioStream" uid="uid://ihvb1fhyhxcu" path="res://music/piel de cordero.ogg" id="1_fawv8"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" unique_id=389720625]
+stream = ExtResource("1_fawv8")
+unit_size = 28.57
+autoplay = true

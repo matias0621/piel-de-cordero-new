@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bgohedvsyye8u"]
+
+[ext_resource type="PackedScene" uid="uid://br4plb4psnrqy" path="res://test/asd/piel de cordero 1 (4).blend" id="1_urdk0"]
+[ext_resource type="Script" uid="uid://bsq52k0ootd4p" path="res://scenes/players/animations.gd" id="2_0hy1t"]
+
+[node name="MonsterNew" unique_id=1392705465 node_paths=PackedStringArray("_animationPlayer") instance=ExtResource("1_urdk0")]
+script = ExtResource("2_0hy1t")
+_animationPlayer = NodePath("AnimationPlayer")
+
+[node name="GEMA DE REFERENCIA" parent="." index="0" unique_id=1321475703]
+visible = false
+
+[node name="Plane" parent="." index="1" unique_id=1197977109]
+visible = false
+
+[node name="Empty_002" parent="." index="2" unique_id=1679708412]
+visible = false
+
+[node name="Empty_003" parent="." index="3" unique_id=1758732770]
+visible = false
+
+[node name="Empty_004" parent="." index="4" unique_id=2110968168]
+visible = false
+
+[node name="metarig" parent="." index="5" unique_id=511373564]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -3.021202, 0)
+
+[node name="Skeleton3D" parent="metarig" index="0" unique_id=1230082957]
+bones/5/rotation = Quaternion(-0.2826763, 0.6261813, 0.59257144, -0.42053556)
+bones/6/rotation = Quaternion(0.03784395, 0.99849945, 0.023348676, -0.031962436)
+bones/13/rotation = Quaternion(-0.027280208, 0.02067043, -0.18800868, 0.98157084)
+bones/15/rotation = Quaternion(-0.037843935, 0.99849945, 0.023348691, 0.031962436)
+bones/27/rotation = Quaternion(-0.67779684, -0.24481587, 0.69289136, -0.023625862)
+
+[node name="Empty" parent="." index="6" unique_id=198942542]
+visible = false
+
+[node name="Empty_001" parent="." index="7" unique_id=1896719937]
+visible = false
+
+[node name="Cube_002" parent="." index="8" unique_id=486372720]
+visible = false
+
+[node name="Cube_004" parent="." index="9" unique_id=808319483]
+visible = false
+
+[node name="Cube_005" parent="." index="10" unique_id=1313315330]
+visible = false
+
+[node name="Cube_006" parent="." index="11" unique_id=366020786]
+visible = false
+
+[node name="metarig_001" parent="." index="12" unique_id=1784180480]
+visible = false
+
+[node name="Skeleton3D" parent="metarig_001" index="0" unique_id=1065642132]
+bones/0/position = Vector3(2.1175824e-22, 0.6000778, -0.0552)
+bones/0/rotation = Quaternion(-0.06498516, 2.3791466e-07, -1.5493685e-08, 0.99788624)
+bones/1/rotation = Quaternion(0.06581484, -1.1895086e-07, 2.3537222e-08, 0.9978319)
+bones/2/rotation = Quaternion(0.027314706, 1.1916481e-07, 9.768498e-09, 0.999627)
+bones/3/rotation = Quaternion(-0.034184065, -1.19139635e-07, -1.2225175e-08, 0.9994156)
+bones/4/rotation = Quaternion(0.13419951, -2.3626188e-07, 7.170287e-15, 0.99095434)
+bones/5/rotation = Quaternion(-0.117678225, -6.214884e-14, 2.8056672e-08, 0.99305177)
+bones/34/position = Vector3(-0.48325777, 0.10331914, 0.046865456)
+bones/34/rotation = Quaternion(0.0952203, 0.9420381, 0.31777337, 0.050174862)
+bones/35/rotation = Quaternion(0.85869527, 0.042393833, 0.0308725, 0.5097961)
+bones/36/rotation = Quaternion(0.31897676, -0.3701561, 0.21676192, 0.8451346)
+bones/37/position = Vector3(0.4961856, 0.17851359, -0.05244057)
+bones/37/rotation = Quaternion(-0.20204425, -0.8128783, -0.48654258, 0.24836104)
+bones/38/rotation = Quaternion(0.93276066, 0.052141964, -0.11019777, 0.33925715)
+bones/39/rotation = Quaternion(0.07168515, -0.011029983, 0.141371, 0.9872963)
+bones/41/position = Vector3(-0.2904382, 0.009445698, 0.044399925)
+bones/41/rotation = Quaternion(0.9971585, -0.073555306, -0.015900644, -0.0034150442)
+bones/42/rotation = Quaternion(0.1818509, 0.011721792, -0.04965076, 0.9820019)
+bones/43/position = Vector3(-6.80609e-09, 2.761471e-08, 1.4586227e-08)
+bones/43/rotation = Quaternion(-0.22155303, -0.631252, -0.47473067, 0.5718969)
+bones/44/position = Vector3(0.29043818, 0.009445645, 0.04440021)
+bones/44/rotation = Quaternion(0.9971585, 0.07355531, 0.015901083, -0.0034150141)
+bones/45/rotation = Quaternion(0.18185084, -0.011721758, 0.049650785, 0.98200196)
+
+[node name="Sphere" parent="." index="13" unique_id=360960206]
+visible = false
+
+[node name="Sphere_001" parent="." index="14" unique_id=1294461274]
+visible = false
+
+[node name="Sphere_002" parent="." index="15" unique_id=2078611938]
+visible = false
+
+[node name="Sphere_003" parent="." index="16" unique_id=1166427024]
+visible = false
+
+[node name="Sphere_004" parent="." index="17" unique_id=1539411864]
+visible = false
+
+[node name="Sphere_005" parent="." index="18" unique_id=598838916]
+visible = false
+
+[node name="Sphere_006" parent="." index="19" unique_id=615738019]
+visible = false
+
+[node name="Sphere_007" parent="." index="20" unique_id=678680486]
+visible = false
+
+[node name="Sphere_008" parent="." index="21" unique_id=1392173896]
+visible = false
+
+[node name="Sphere_009" parent="." index="22" unique_id=1405136077]
+visible = false
+
+[node name="Sphere_010" parent="." index="23" unique_id=1579552642]
+visible = false
+
+[node name="Sphere_011" parent="." index="24" unique_id=498870648]
+visible = false
+
+[node name="cOLUMNA" parent="." index="25" unique_id=1235352383]
+visible = false
+
+[node name="pUERTA" parent="." index="26" unique_id=1258434178]
+visible = false
+
+[node name="Empty_006" parent="." index="27" unique_id=2143681441]
+visible = false
+
+[node name="Empty_005" parent="." index="28" unique_id=1940832748]
+visible = false
+
+[node name="pAREDE" parent="." index="29" unique_id=2044178574]
+visible = false

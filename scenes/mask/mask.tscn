@@ -1,16 +1,26 @@
 [gd_scene format=3 uid="uid://1italmrgaq0"]
 
 [ext_resource type="Script" uid="uid://degh5omnrxve8" path="res://scenes/mask/mascara.gd" id="1_44u6u"]
+[ext_resource type="PackedScene" uid="uid://cdcy7bajkf5op" path="res://scenes/players/mascara_fake.tscn" id="2_61b51"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_npq30"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_44u6u"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_jlvus"]
+radius = 2.7239099
 
 [node name="Mask" type="CharacterBody3D" unique_id=1667784732]
 script = ExtResource("1_44u6u")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=55215513]
+visible = false
 mesh = SubResource("SphereMesh_npq30")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1958273340]
-shape = SubResource("SphereShape3D_44u6u")
+[node name="Area3D" type="Area3D" parent="." unique_id=2084594565]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2035419442]
+shape = SubResource("SphereShape3D_jlvus")
+
+[node name="piel de cordero 1 (7)" parent="." unique_id=1027439313 instance=ExtResource("2_61b51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.390759, -0.97051954, 0)
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

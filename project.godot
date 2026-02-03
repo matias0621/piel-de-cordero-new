@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Piel de cordero"
-run/main_scene="uid://cife4ieoppieq"
+run/main_scene="uid://cdllqs5mpnnu0"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-MultiplayerInput="*uid://brb4nvhve5gxp"
+MultiplayerInput="*uid://bni55tg4jyd5y"
+GameManager="*uid://bm56wx0pu461m"
 
 [display]
 
@@ -32,6 +33,7 @@ enabled=PackedStringArray("res://addons/multiplayer_input/plugin.cfg")
 
 Monster=""
 Human=""
+palanca=""
 
 [input]
 

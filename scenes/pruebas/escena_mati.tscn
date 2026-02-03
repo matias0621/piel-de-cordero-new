@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cife4ieoppieq"]
 
-[ext_resource type="Script" uid="uid://buwo1b8kga33q" path="res://scenes/pruebas/container_player.gd" id="1_8x3i6"]
-[ext_resource type="PackedScene" uid="uid://eybnci8tomx0" path="res://scenes/players/players.tscn" id="1_adpu8"]
+[ext_resource type="PackedScene" uid="uid://b0ffbr4532nap" path="res://scenes/pruebas/container_player.tscn" id="1_tjjn3"]
+[ext_resource type="PackedScene" uid="uid://cogdt8cloroq" path="res://scenes/palanca/palanca.tscn" id="3_tjjn3"]
+[ext_resource type="PackedScene" uid="uid://c8puwv26q0fw3" path="res://scenes/pruebas/audio_stream_player_3d.tscn" id="3_ttruu"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_po620"]
 
@@ -10,36 +11,34 @@
 [node name="EscenaMati" type="Node3D" unique_id=2045668540]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1763288041]
-transform = Transform3D(-0.99997425, 0, 0.007173151, 0, 1, 0, -0.007173151, 0, -0.99997425, 0.065, 4.004, -30)
+transform = Transform3D(-0.9999743, 4.6564935e-10, 0.0071731512, 0.004231047, 0.80751663, 0.5898297, -0.0057924385, 0.5898449, -0.80749583, 0.065, 14.999336, -65.60531)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2060051927]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.680607)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=533365771]
-transform = Transform3D(50, 0, 0, 0, -2.1855694e-06, 50, 0, -50, -2.1855694e-06, 0, 0, 0)
+transform = Transform3D(200, 0, 0, 0, -8.742278e-06, 200, 0, -200, -8.742278e-06, 0, 0, 0)
 mesh = SubResource("QuadMesh_po620")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=994260320]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0, 0, 0)
 shape = SubResource("HeightMapShape3D_po620")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1341149416]
 transform = Transform3D(-0.045415316, 0.8177265, -0.5738126, 0, 0.5744053, 0.8185711, 0.9989682, 0.037175663, -0.026086798, -42.334717, 20.479288, 4.5168915)
 
-[node name="ContainerPlayer" type="Node" parent="." unique_id=898673376]
-script = ExtResource("1_8x3i6")
+[node name="ContainerPlayer" parent="." unique_id=798648694 instance=ExtResource("1_tjjn3")]
 
-[node name="Players" parent="ContainerPlayer" unique_id=796467928 instance=ExtResource("1_adpu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3698616, 5.7048264, -7.3420677)
+[node name="Palanca" parent="." unique_id=123192877 instance=ExtResource("3_tjjn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.37376, 0.5, -30.225298)
 
-[node name="Players2" parent="ContainerPlayer" unique_id=1428613761 instance=ExtResource("1_adpu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5960245, -20.164665)
-device_id = 0
+[node name="Palanca2" parent="." unique_id=233461516 instance=ExtResource("3_tjjn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.237363, 0.5, -29.744379)
 
-[node name="Players3" parent="ContainerPlayer" unique_id=1669231004 instance=ExtResource("1_adpu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.966572, 6.6954875, 0)
-device_id = 1
+[node name="Palanca3" parent="." unique_id=1695296809 instance=ExtResource("3_tjjn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.494021, 0, -47.55883)
 
-[node name="Players4" parent="ContainerPlayer" unique_id=546134771 instance=ExtResource("1_adpu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.068829, 5.399602, 0)
-device_id = 2
+[node name="Palanca4" parent="." unique_id=1692982645 instance=ExtResource("3_tjjn3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.940979, 0.7404423, -53.691376)
+
+[node name="AudioStreamPlayer3D" parent="." unique_id=389720625 instance=ExtResource("3_ttruu")]

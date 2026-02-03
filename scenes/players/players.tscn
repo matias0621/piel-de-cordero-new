@@ -1,22 +1,31 @@
 [gd_scene format=3 uid="uid://eybnci8tomx0"]
 
 [ext_resource type="Script" uid="uid://dudk0ituk5j8w" path="res://scenes/players/players.gd" id="1_u6k21"]
-[ext_resource type="PackedScene" uid="uid://kufr8ph0ur8h" path="res://scenes/players/monster_model.tscn" id="2_j7hel"]
+[ext_resource type="PackedScene" uid="uid://bgohedvsyye8u" path="res://scenes/players/monster_new_model.tscn" id="3_lew6q"]
 [ext_resource type="PackedScene" uid="uid://1italmrgaq0" path="res://scenes/mask/mask.tscn" id="3_qrkte"]
+[ext_resource type="PackedScene" uid="uid://3bdxak83m7u5" path="res://scenes/players/human_model.tscn" id="4_lew6q"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qrkte"]
-radius = 1.0922852
-height = 5.33374
+radius = 2.4838867
+height = 10.835815
 
 [node name="Players" type="CharacterBody3D" unique_id=796467928 node_paths=PackedStringArray("monster_animation")]
 script = ExtResource("1_u6k21")
-monster_animation = NodePath("MonsterModel")
+speed = 20.0
+monster_animation = NodePath("MonsterNew")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=384090268]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41052246, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3405151, 0)
 shape = SubResource("CapsuleShape3D_qrkte")
 
-[node name="MonsterModel" parent="." unique_id=709918709 instance=ExtResource("2_j7hel")]
+[node name="Mask" parent="." unique_id=1667784732 node_paths=PackedStringArray("player") instance=ExtResource("3_qrkte")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3161225, -4.989632)
+player = NodePath("..")
 
-[node name="Mask" parent="." unique_id=1667784732 instance=ExtResource("3_qrkte")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8933811, -2.6021168)
+[node name="MonsterNew" parent="." unique_id=1392705465 instance=ExtResource("3_lew6q")]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=148238739]
+unit_size = 100.0
+
+[node name="HumanModel" parent="." unique_id=1027439313 instance=ExtResource("4_lew6q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.510044, 0, 0)

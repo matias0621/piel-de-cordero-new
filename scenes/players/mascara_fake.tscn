@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cdcy7bajkf5op"]
+
+[ext_resource type="PackedScene" uid="uid://csftmflhle67g" path="res://test/monster_new_new/piel de cordero 1 (7).blend" id="1_76yof"]
+
+[node name="piel de cordero 1 (7)" unique_id=1027439313 instance=ExtResource("1_76yof")]
+
+[node name="GEMA DE REFERENCIA" parent="." index="0" unique_id=988886783]
+visible = false
+
+[node name="Plane" parent="." index="1" unique_id=309207467]
+visible = false
+
+[node name="Empty_002" parent="." index="2" unique_id=1776737670]
+visible = false
+
+[node name="Empty_003" parent="." index="3" unique_id=68003982]
+visible = false
+
+[node name="Empty_004" parent="." index="4" unique_id=1060852808]
+visible = false
+
+[node name="metarig" parent="." index="5" unique_id=248463332]
+visible = false
+
+[node name="Empty" parent="." index="6" unique_id=829469748]
+visible = false
+
+[node name="Empty_001" parent="." index="7" unique_id=821079779]
+visible = false
+
+[node name="metarig_001" parent="." index="8" unique_id=195968566]
+transform = Transform3D(4, 3.496911e-07, 0, -3.496911e-07, 4, 0, 0, 0, -4, -12.4265, -2.93656, 0.45349362)
+
+[node name="Cube_001" parent="metarig_001/Skeleton3D" parent_id_path=PackedInt32Array(235823889) index="16" unique_id=2126877291]
+visible = false
+
+[node name="Cube_003" parent="metarig_001/Skeleton3D" parent_id_path=PackedInt32Array(235823889) index="17" unique_id=2091967192]
+visible = false
+
+[node name="cOLUMNA" parent="." index="9" unique_id=508754563]
+visible = false
+
+[node name="pUERTA" parent="." index="10" unique_id=434230260]
+visible = false
+
+[node name="Empty_006" parent="." index="11" unique_id=2061785432]
+visible = false
+
+[node name="Empty_005" parent="." index="12" unique_id=1135003774]
+visible = false
+
+[node name="pAREDE" parent="." index="13" unique_id=649123620]
+visible = false
+
+[node name="Empty_007" parent="." index="14" unique_id=1875095566]
+visible = false
+
+[node name="Empty_008" parent="." index="15" unique_id=237848163]
+visible = false
